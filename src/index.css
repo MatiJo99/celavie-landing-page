@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------
+   Brand tokens (Tailwind v4 CSS-first config).
+   Every value here becomes a utility: bg-brand-cocoa, text-brand-blue,
+   font-display, etc. Change a hex here and the whole site follows.
+---------------------------------------------------------------- */
+@theme {
+  --color-brand-cocoa: #4a2211;
+  --color-brand-bark: #35180b;
+  --color-brand-ember: #7b3a17;
+  --color-brand-crust: #2a1207;
+  --color-brand-ink: #100d0b;
+  --color-brand-coal: #1b1715;
+  --color-brand-cream: #f6ece3;
+  --color-brand-blue: #2f4bf5;
+  --color-brand-blue-dark: #2439cc;
+  --color-brand-gold: #f0a83c;
+
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-ethiopic: "Noto Sans Ethiopic", "Noto Serif Ethiopic", sans-serif;
+
+  --shadow-tilt: 0 18px 40px -12px rgb(0 0 0 / 0.55);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* keeps sticky header from covering anchor targets */
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-brand-ink);
+    color: var(--color-brand-cream);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* -------------------------------------------------------------
+     Amharic typography.
+     Ge'ez glyphs are taller and denser than Latin, so they need a
+     bigger line-height and a touch less optical size to sit right
+     in the same layout. Driven purely by the lang attribute, so a
+     single <html lang="am"> flip restyles the whole page.
+  -------------------------------------------------------------- */
+  :lang(am) {
+    font-family: var(--font-ethiopic);
+    line-height: 1.75;
+    letter-spacing: 0;
+    word-spacing: 0.02em;
+  }
+
+  :lang(am) h1,
+  :lang(am) h2,
+  :lang(am) h3 {
+    line-height: 1.5;
+    font-size: 0.94em; /* Ethiopic runs optically larger at the same px */
+    font-weight: 600;
+  }
+
+  /* Amharic has no lowercase — uppercase transforms do nothing but
+     they can throw off tracking, so neutralise them. */
+  :lang(am) .tracking-tight,
+  :lang(am) .tracking-wide,
+  :lang(am) .uppercase {
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand-gold);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  /* Hero backdrop: warm roasted-brown wash, lightest around the
+     headline and falling off toward the edges. */
+  .bg-hero-roast {
+    background-color: var(--color-brand-cocoa);
+    background-image:
+      radial-gradient(
+        90% 120% at 22% 18%,
+        rgb(139 66 27 / 0.95) 0%,
+        rgb(74 34 17 / 0.9) 45%,
+        rgb(34 15 7 / 0.95) 100%
+      );
+  }
+
+  .bg-panel-dark {
+    background-color: var(--color-brand-coal);
+  }
+
+  .tilt-a { transform: rotate(-7deg); }
+  .tilt-b { transform: rotate(5deg); }
+  .tilt-c { transform: rotate(-3deg); }
+  .tilt-d { transform: rotate(9deg); }
+}
+
+/* Respect people who ask their OS for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

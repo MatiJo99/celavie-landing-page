@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "brand": { "en": "Celavie", "am": "ሴላቪ" },
+    "tagline": {
+      "en": "Chicken & Burger",
+      "am": "ችክን እና በርገር"
+    },
+    "languageName": { "en": "English", "am": "አማርኛ" },
+    "switchLabel": { "en": "Change language", "am": "ቋንቋ ይቀይሩ" },
+    "skipToContent": { "en": "Skip to content", "am": "ወደ ይዘቱ ይለፉ" }
+  },
+
+  "nav": {
+    "home": { "en": "Home", "am": "ዋና ገጽ" },
+    "about": { "en": "About", "am": "ስለ እኛ" },
+    "location": { "en": "Location", "am": "አድራሻ" },
+    "contact": { "en": "Contact", "am": "አግኙን" },
+    "menuOpen": { "en": "Open menu", "am": "ዝርዝሩን ይክፈቱ" },
+    "menuClose": { "en": "Close menu", "am": "ዝርዝሩን ይዝጉ" }
+  },
+
+  "hero": {
+    "headlineTop": { "en": "Are you starving?", "am": "ተርበዋል?" },
+    "headlineBottom": {
+      "en": "One Bite and You'll Get It!",
+      "am": "በአንድ ጉርሻ እርካታ ያገኛሉ!"
+    },
+    "body": {
+      "en": "Fresh ingredients, secret spices, and bold flavors packed into every single bite. Visit us or order for delivery and enjoy our service.",
+      "am": "ትኩስ ግብዓቶች፣ ልዩ ቅመሞች እና ጠንካራ ጣዕም በእያንዳንዱ ጉርሻ ውስጥ ተካተዋል። ይጎብኙን ወይም ዴሊቨሪ ይዘዙ፤ በአገልግሎታችን ይደሰቱ።"
+    },
+    "cta": { "en": "Call us", "am": "ይደውሉልን" },
+    "ctaAria": {
+      "en": "Call Celavie on 7877",
+      "am": "በ7877 ይደውሉ"
+    },
+    "shortCodeNote": { "en": "Dial 7877", "am": "7877 ይደውሉ" }
+  },
+
+  "about": {
+    "heading": { "en": "Who are we?", "am": "እኛ ማን ነን?" },
+    "body": {
+      "en": "We are Celavie Chicken and Burger, located in Addis Ababa with 15 years of experience. Come in and enjoy our service.",
+      "am": "እኛ ሴላቪ ችክን እና በርገር ነን፤ መገኛችን በአዲስ አበባ ስሆን ለ15 ዓመታት ያካበተ ልምድ አለን። ይምጡና በአገልግሎታችን ይደሰቱ።"
+    },
+    "reviewsHeading": {
+      "en": "Here is what our customers say.",
+      "am": "ደንበኞቻችን ከሚሉት በጥቅቱ።"
+    },
+    "reviewLabels": {
+      "food": { "en": "Food", "am": "ምግብ" },
+      "service": { "en": "Service", "am": "አገልግሎት" },
+      "atmosphere": { "en": "Atmosphere", "am": "ድባብ" },
+      "recommended": { "en": "Recommended dish", "am": "የሚመከር ምግብ" },
+      "localGuide": { "en": "Local Guide", "am": "የአካባቢ መመሪያ" },
+      "reviewCount": { "en": "reviews", "am": "አስተያየቶች" },
+      "photoCount": { "en": "photos", "am": "ፎቶዎች" }
+    }
+  },
+
+  "reviews": [
+    {
+      "id": "fatuma",
+      "name": "Fatuma Mohamed",
+      "initial": "F",
+      "meta": { "en": "1 review", "am": "1 አስተያየት" },
+      "when": { "en": "a year ago", "am": "ከአንድ ዓመት በፊት" },
+      "stars": 5,
+      "body": {
+        "en": "Looking for a place to eat in Bole Michael? You should check out Celavie. I especially like their Celavie Burger, tuna pizza, and chicken pizza. Their coffee is great too. I haven't had their juice, since I don't drink juice often, but definitely go to Celavie in Bole Michael.",
+        "am": "በቦሌ ሚካኤል የሚበላበት ቦታ እየፈለጉ ነው? ሴላቪን መሞከር አለቦት። በተለይ የሴላቪ በርገር፣ የቱና ፒዛ እና የዶሮ ፒዛ በጣም ወድጀዋለሁ። ቡናቸውም በጣም ጥሩ ነው። ጭማቂ ብዙም ስለማልጠጣ አልሞከርኩም፤ ነገር ግን በቦሌ ሚካኤል ያለውን ሴላቪ በእርግጠኝነት ይጎብኙ።"
+      },
+      "ratings": { "food": "5/5", "service": "5/5", "atmosphere": "4/5" }
+    },
+    {
+      "id": "getachew",
+      "name": "Getachew",
+      "initial": "G",
+      "meta": { "en": "1 review", "am": "1 አስተያየት" },
+      "when": { "en": "a year ago", "am": "ከአንድ ዓመት በፊት" },
+      "context": { "en": "Dine in · Lunch", "am": "በቦታው፡ ምሳ" },
+      "stars": 5,
+      "body": {
+        "en": "Celavie burger is one of the most delicious burger houses I have ever tried. The staff in Bole Mikael and the supervisor there are excellent — fast, friendly and attentive. Try the Celavie sandwich, club, hangover juice and chicken pizza. Highly recommended.",
+        "am": "የሴላቪ በርገር እስካሁን ከቀመስኳቸው በርገር ቤቶች እጅግ ጣፋጩ ነው። በቦሌ ሚካኤል ያሉት ሠራተኞችና ተቆጣጣሪው በጣም ጎበዞች ናቸው — ፈጣኖች፣ ተግባቢዎችና አክባሪዎች። የሴላቪ ሳንድዊች፣ ክለብ፣ ሃንጎቨር ጭማቂና የዶሮ ፒዛ ይሞክሩ። በጣም እመክራለሁ።"
+      },
+      "recommended": {
+        "en": "Celavie Club Sandwich",
+        "am": "ሴላቪ ክለብ ሳንድዊች"
+      },
+      "ratings": { "food": "5/5", "service": "5/5", "atmosphere": "5/5" }
+    },
+    {
+      "id": "aaron",
+      "name": "Aaron Corbett",
+      "initial": "A",
+      "meta": { "en": "16 reviews · 7 photos", "am": "16 አስተያየቶች · 7 ፎቶዎች" },
+      "when": { "en": "a month ago", "am": "ከአንድ ወር በፊት" },
+      "stars": 5,
+      "body": {
+        "en": "Great food, great service. The veggie sandwich is the only thing that's fasting, fyi.",
+        "am": "ምግቡ በጣም ጥሩ ነው፣ አገልግሎቱም እንዲሁ። ለመረጃ ያህል፣ የጾም ምርጫው የአትክልት ሳንድዊች ጥሩ ምርጫ ነው።"
+      },
+      "ratings": { "food": "5/5", "service": "5/5", "atmosphere": "5/5" }
+    },
+    {
+      "id": "tumim",
+      "name": "Tumim Wolde",
+      "initial": "T",
+      "meta": { "en": "5 reviews · 3 photos", "am": "5 አስተያየቶች · 3 ፎቶዎች" },
+      "when": { "en": "a year ago", "am": "ከአንድ ዓመት በፊት" },
+      "stars": 5,
+      "body": {
+        "en": "My 11 years of experience with Celavie — whenever I want to enjoy chicken, burger, breakfast, bakery or pastry, my first memory and choice. They always strive for the better. Friendly, helpful, convenient, and they respect their customers.",
+        "am": "ከሴላቪ ጋር የ11 ዓመት ልምድ አለኝ — ዶሮ፣ በርገር፣ ቁርስ፣ ዳቦ ወይም ኬክ መብላት ስፈልግ የመጀመሪያ ምርጫዬ ነው። ሁልጊዜ ወደ ተሻለ ደረጃ ለመድረስ ይጥራሉ። ተግባቢዎች፣ አጋዥዎች፣ ምቹና ደንበኞቻቸውን የሚያከብሩ ናቸው።"
+      },
+      "ratings": { "food": "5/5", "service": "5/5", "atmosphere": "5/5" }
+    }
+  ],
+
+  "locations": {
+    "heading": { "en": "Location", "am": "አድራሻ" },
+    "subheading": {
+      "en": "Our branches across Addis Ababa.",
+      "am": "በአዲስ አበባ ያሉን ቅርንጫፎች።"
+    },
+    "directions": { "en": "Get directions", "am": "አቅጣጫ ይመልከቱ" },
+    "branches": {
+      "bole-medhaniyalem": {
+        "name": { "en": "Bole Medhaniyalem", "am": "ቦሌ መድኃኒዓለም" },
+        "note": { "en": "Open daily፡ 24H", "am": "በየቀኑ ይከፈታል፡ 24ሰዓት" }
+      },
+      "bole-brass": {
+        "name": { "en": "Bole Brass", "am": "ቦሌ ብራስ" },
+        "note": { "en": "Open daily፡ 9:00 AM - 8:30 PM", "am": "በየቀኑ ይከፈታል: 3:00 ጠዋት - 2:30 ማታ"}
+      },
+      "summit": {
+        "name": { "en": "Summit", "am": "ሰሚት" },
+        "note": { "en": "Open daily፡ 9:00 AM - 8:30 PM", "am": "በየቀኑ ይከፈታል: 3:00 ጠዋት - 2:30 ማታ"}
+      }
+    }
+  },
+
+  "footer": {
+    "heading": { "en": "Contact us", "am": "በነዚህ አማራጮች አግኙን" },
+    "callCenter": { "en": "Call Center", "am": "የጥሪ ማዕከል" },
+    "email": { "en": "E-mail", "am": "ኢሜይል" },
+    "social": { "en": "Social media", "am": "ማህበራዊ ሚዲያ" },
+    "shortCode": { "en": "Short code", "am": "አጭር የጥር ቁጥር" },
+    "rights": {
+      "en": "Celavie Chicken and Burger. All rights reserved.",
+      "am": "ሴላቪ ችክን እና በርገር። መብቱ በሕግ የተጠበቀ ነው።"
+    },
+    "linkPending": {
+      "en": "Link coming soon",
+      "am": "ሊንኩ በቅርቡ ይጨመራል"
+    }
+  }
+}
