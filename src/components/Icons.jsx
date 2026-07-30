@@ -1,5 +1,3 @@
-/* Hand-rolled SVGs so the site ships with zero icon dependencies. */
-
 export function InstagramIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>

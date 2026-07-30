@@ -8,11 +8,6 @@ const NETWORKS = [
   { key: "tiktok", name: "TikTok", Icon: TikTokIcon, tone: "hover:bg-[#010101]" },
 ];
 
-/**
- * size: "sm" for the navbar, "lg" for the footer.
- * A network with an empty URL in config/site.js still shows, but is
- * marked as pending rather than linking nowhere.
- */
 export default function SocialLinks({ size = "sm", className = "" }) {
   const { t } = useLang();
 

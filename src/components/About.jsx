@@ -9,8 +9,6 @@ export default function About() {
   const labels = content.about.reviewLabels;
   const recipesRef = useRef(null);
   const [currentRecipe, setCurrentRecipe] = useState(0);
-
-  // 1. Dynamic responsive visible count: 1 on mobile, 2 on tablet, 3 on desktop
   const [visibleRecipes, setVisibleRecipes] = useState(3);
 
   useEffect(() => {
@@ -23,7 +21,6 @@ export default function About() {
         setVisibleRecipes(3);
       }
     };
-
     handleResize(); // Initial check
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -31,14 +28,12 @@ export default function About() {
 
   const maxIndex = Math.max(0, content.recipes.length - visibleRecipes);
 
-  // Reset index if resizing causes current index to exceed max allowed
   useEffect(() => {
     if (currentRecipe > maxIndex) {
       setCurrentRecipe(maxIndex);
     }
   }, [maxIndex, currentRecipe]);
 
-  // Touchpad horizontal scroll listener
   useEffect(() => {
     const el = recipesRef.current;
     if (!el) return;
@@ -46,7 +41,6 @@ export default function About() {
     let isCooldown = false;
 
     const handleWheel = (e) => {
-      // Check for horizontal scrolling gesture from trackpad/touchpad
       if (Math.abs(e.deltaX) > Math.abs(e.deltaY) && Math.abs(e.deltaX) > 10) {
         e.preventDefault();
         if (isCooldown) return;
@@ -60,7 +54,7 @@ export default function About() {
         isCooldown = true;
         setTimeout(() => {
           isCooldown = false;
-        }, 400); // Debounce trackpad swipe velocity
+        }, 400);
       }
     };
 
@@ -77,7 +71,6 @@ export default function About() {
     setCurrentRecipe(next);
   };
 
-  // Helper to compute translation percent per responsive step
   const getTransform = () => {
     if (visibleRecipes === 1) {
       return `translateX(calc(-${currentRecipe} * (100% + 24px)))`;

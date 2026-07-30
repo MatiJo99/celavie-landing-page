@@ -8,7 +8,6 @@ export const site = {
     "+251938485137",
     "+251930014766",
   ],
-
   email: "celaviechickenandburger@gmail.com",
 
   social: {
@@ -47,7 +46,6 @@ export const site = {
     image: "/assets/recipes/juice.jpg",
   },
 ],
-
 
   logo: "/assets/logo/celavie-logo.png",
 

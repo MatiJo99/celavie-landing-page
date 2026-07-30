@@ -128,8 +128,6 @@ export default function Navbar() {
   );
 }
 
-/* Two-state pill. Reading both labels at once makes the choice
-   obvious to a customer who doesn't read the current language. */
 function LanguageToggle({ lang, setLang, label }) {
   return (
     <div
