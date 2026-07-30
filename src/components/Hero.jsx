@@ -9,16 +9,58 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative isolate overflow-hidden bg-hero-roast rounded-b-3xl"
+      className="relative isolate overflow-hidden rounded-b-3xl bg-hero-roast"
     >
-      {/* Oversized brand watermark, exactly as in the Figma. Purely
-          decorative, so it's hidden from screen readers. */}
+      {/* Oversized brand watermark */}
       <span
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 select-none whitespace-nowrap font-display text-[26vw] font-bold leading-none text-brand-cream/[0.055] lg:text-[18rem]"
       >
         Celavie
       </span>
+
+      {/* Decorative food stickers */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        <SmartImage
+          src={site.accents.burger}
+          alt=""
+          label="Burger decoration"
+          hint="decorative PNG"
+          className="absolute left-4 top-24 hidden w-24 rotate-[-30deg] opacity-60 sm:block lg:left-30 lg:top-28 lg:w-50"
+          imgClassName="h-full w-full object-contain"
+          rounded="rounded-2xl"
+        />
+
+        <SmartImage
+          src={site.accents.pizzaSlice1}
+          alt=""
+          label="Pizza decoration"
+          hint="decorative PNG"
+          className="absolute right-1/2 -translate-x-1/2 -translate-x-[30px] top-20 hidden w-20 rotate-[14deg] opacity-70 sm:block lg:top-28 lg:w-30 float-slow"
+          imgClassName="h-full w-full object-contain"
+          rounded="rounded-3xl"
+        />
+
+        <SmartImage
+          src={site.accents.chickenWing}
+          alt=""
+          label="Chicken decoration"
+          hint="decorative PNG"
+          className="absolute bottom-30 left-50 hidden w-20 rotate-[8deg] opacity-65 md:block lg:left-100 lg:w-40"
+          imgClassName="h-full w-full object-contain"
+          rounded="rounded-3xl"
+        />
+
+        <SmartImage
+          src={site.accents.fries}
+          alt=""
+          label="Fries decoration"
+          hint="decorative PNG"
+          className="absolute bottom-10 right-6 hidden w-20 rotate-[-10deg] opacity-85 md:block lg:right-14 lg:w-30"
+          imgClassName="h-full w-full object-contain"
+          rounded="rounded-3xl"
+        />
+      </div>
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-5 pb-16 pt-14 lg:grid-cols-[1.05fr_1fr] lg:gap-6 lg:px-8 lg:pb-24 lg:pt-20">
         {/* ---- Copy ---- */}
@@ -37,7 +79,6 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            {/* 7877 is a network short code — tel: is all it needs. */}
             <a
               href={`tel:${site.shortCode}`}
               aria-label={t("hero.ctaAria")}
@@ -53,7 +94,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* ---- Photo collage: four tilted prints, overlapping ---- */}
+        {/* ---- Photo collage ---- */}
         <div className="relative mx-auto grid w-full max-w-md grid-cols-2 gap-3 sm:gap-4 lg:max-w-lg">
           {site.heroPhotos.map((photo, i) => (
             <div

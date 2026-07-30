@@ -1,5 +1,6 @@
 import { useLang } from "../LanguageContext";
 import site from "../config/site";
+import SmartImage from "./SmartImage";
 import { PinIcon, ArrowIcon } from "./Icons";
 
 export default function Locations() {
@@ -7,7 +8,37 @@ export default function Locations() {
   const branchCopy = content.locations.branches;
 
   return (
-    <section id="location" className="bg-brand-crust">
+    <section id="location" className="relative isolate overflow-hidden bg-brand-crust">
+      {/* Decorative icons */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        <SmartImage
+          src={site.accents.burger1}
+          alt=""
+          label="Burger decoration"
+          className="absolute left-30 top-10 hidden w-30 rotate-[-12deg] opacity-35 md:block float-slow"
+          imgClassName="h-full w-full object-contain"
+          rounded="rounded-3xl"
+        />
+
+        <SmartImage
+          src={site.accents.juice}
+          alt=""
+          label="Pizza decoration"
+          className="absolute right-40 top-24 hidden w-30 rotate-[18deg] opacity-45 md:block"
+          imgClassName="h-full w-full object-contain"
+          rounded="rounded-3xl"
+        />
+
+        <SmartImage
+          src={site.accents.fries1}
+          alt=""
+          label="Fries decoration"
+          className="absolute bottom-5 left-1/2 hidden w-40 -translate-x-1/2 rotate-[8deg] opacity-30 lg:block"
+          imgClassName="h-full w-full object-contain"
+          rounded="rounded-2xl"
+        />
+      </div>
+
       <div className="mx-auto max-w-7xl px-5 py-16 lg:px-8 lg:py-20">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <h2 className="font-display text-3xl font-medium text-brand-cream lg:text-[2.4rem]">
@@ -16,7 +47,7 @@ export default function Locations() {
           <p className="text-sm text-brand-cream/60">{t("locations.subheading")}</p>
         </div>
 
-        <ul className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {site.branches.map((branch) => {
             const copy = branchCopy[branch.id];
             const name = tr(copy?.name);
@@ -26,7 +57,6 @@ export default function Locations() {
                 key={branch.id}
                 className="group overflow-hidden rounded-2xl bg-black/30 ring-1 ring-brand-cream/10 transition duration-300 hover:ring-brand-gold/40"
               >
-                {/* Embedded Map Container */}
                 <div className="aspect-[4/3] w-full overflow-hidden bg-brand-crust/50">
                   {branch.embedUrl ? (
                     <iframe

@@ -17,6 +17,37 @@ export const site = {
     tiktok: "https://www.tiktok.com/@celavieburger?_r=1&_t=ZS-98P7WsRJQJw",
   },
 
+  recipes: [
+  {
+    id: "burger",
+    image: "/assets/recipes/burger.jpg",
+  },
+  {
+    id: "cake",
+    image: "/assets/recipes/cake.jpg",
+  },
+  {
+    id: "pizza",
+    image: "/assets/recipes/pizza.jpg",
+  },
+  {
+    id: "chicken",
+    image: "/assets/recipes/chicken.jpg",
+  },
+  {
+    id: "sandwich",
+    image: "/assets/recipes/sandwich.jpg",
+  },
+  {
+    id: "pastry",
+    image: "/assets/recipes/pastry.jpg",
+  },
+  {
+    id: "juice",
+    image: "/assets/recipes/juice.jpg",
+  },
+],
+
 
   logo: "/assets/logo/celavie-logo.png",
 
@@ -28,10 +59,23 @@ export const site = {
   ],
 
   accents: {
-    pizzaSlice: "/assets/food/accent-pizza-slice.png",
-    burger: "/assets/food/accent-burger.png",
-  },
-  aboutBackdrop: "/assets/food/about-backdrop.jpg",
+      pizzaSlice1: "/assets/food/accent-pizza-slice1.png",
+      burger: "/assets/food/accent-pizza-slice2.png",
+      burger1: "/assets/food/location1.png",
+      chickenWing: "/assets/food/accent-chicken-wing.png",
+      fries: "/assets/food/accent-fries.png",
+      pizzaSlice: "/assets/food/accent-pizza-slice.png",
+      juice: "/assets/food/location2.png",
+      fries1: "/assets/food/location3.png",
+      about1: "/assets/food/about1.png",
+      about2: "/assets/food/about2.png",
+      about3: "/assets/food/about3.png",
+      about4: "/assets/food/about4.png",
+      about5: "/assets/food/about5.png",
+      about6: "/assets/food/about6.png",
+      about7: "/assets/food/about7.png",
+      aboutBackdrop: "/assets/food/about-backdrop.png",
+      },
 
   branches: [
     {
@@ -48,6 +92,10 @@ export const site = {
       id: "summit", // Or 'piasa' based on your translation key
       embedUrl: "https://maps.google.com/maps?q=Celavie+Chicken+%26+Burger+%7C+Summit&ftid=0x164b9b0002a69fbd:0xe330d9940f7fc8c7&hl=en&z=16&output=embed",
       mapUrl: "https://maps.app.goo.gl/rC3uSZkoTUcef63N7",
+    },
+    {id: "piasa-mebrat-haile",
+      embedUrl: "https://maps.google.com/maps?q=Celavie+Chicken+%26+Burger+%7C+Piasa+Mebrat+Haile+Bulding&hl=en&z=16&output=embed",
+      mapUrl: "https://maps.app.goo.gl/ufB6xbf6XHmVXAa47",
     },
   ],
 };

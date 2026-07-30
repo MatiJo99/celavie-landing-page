@@ -13,11 +13,12 @@ function get(obj, path) {
 
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState(() => {
-    if (typeof window === "undefined") return "en";
+    if (typeof window === "undefined") return "am";
     const saved = window.localStorage.getItem(STORAGE_KEY);
     if (LANGS.includes(saved)) return saved;
-    // First-time visitors from an Amharic browser get Amharic.
-    return navigator.language?.toLowerCase().startsWith("am") ? "am" : "en";
+    // First-time visitors get Amharic.
+    //return navigator.language?.toLowerCase().startsWith("am") ? "am" : "en";
+    return "am";
   });
 
   /* Setting lang on <html> is what powers every :lang(am) rule in
@@ -36,14 +37,14 @@ export function LanguageProvider({ children }) {
         return "";
       }
       if (typeof node === "string") return node;
-      return node[lang] ?? node.en ?? "";
+      return node[lang] ?? node.am ?? node.en ?? "";
     };
 
     /** tr({en, am}) -> for objects already pulled out of content.json */
     const tr = (node) => {
       if (!node) return "";
       if (typeof node === "string") return node;
-      return node[lang] ?? node.en ?? "";
+      return node[lang] ?? node.am ?? node.en ?? "";
     };
 
     const toggle = () => setLang((prev) => (prev === "en" ? "am" : "en"));

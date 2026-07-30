@@ -43,20 +43,109 @@
       "en": "We are Celavie Chicken and Burger, located in Addis Ababa with 15 years of experience. Come in and enjoy our service.",
       "am": "እኛ ሴላቪ ችክን እና በርገር ነን፤ መገኛችን በአዲስ አበባ ስሆን ለ15 ዓመታት ያካበተ ልምድ አለን። ይምጡና በአገልግሎታችን ይደሰቱ።"
     },
-    "reviewsHeading": {
-      "en": "Here is what our customers say.",
-      "am": "ደንበኞቻችን ከሚሉት በጥቅቱ።"
+    "recipesHeading": {"en": "From Recipes","am": "ከምግቦቻችን"},
+
+  "whyHeading": {"en": "Why Celavie?","am": "ለምን ሴላቪ?"},
+
+    "whyBody": {
+      "en": "To experience friendly customer service from welcoming staff members and enjoy a diverse menu offering burgers, chicken, pizza, breakfast, cakes, pastries and many more delicious dishes.",
+      "am": "ከተቀባይ ሰራተኞቻችን ጀምሮ ወዳጃዊ አገልግሎት ለማግኘት እና በበርገር፣ ዶሮ፣ ፒዛ፣ ኬኮች፣ ፓስትሪዎች እና ሌሎች ብዙ ጣፋጭ ምግቦችን ከጥሩ መስተንግዶ ጋር ለማግኘት።"
     },
-    "reviewLabels": {
-      "food": { "en": "Food", "am": "ምግብ" },
-      "service": { "en": "Service", "am": "አገልግሎት" },
-      "atmosphere": { "en": "Atmosphere", "am": "ድባብ" },
-      "recommended": { "en": "Recommended dish", "am": "የሚመከር ምግብ" },
-      "localGuide": { "en": "Local Guide", "am": "የአካባቢ መመሪያ" },
-      "reviewCount": { "en": "reviews", "am": "አስተያየቶች" },
-      "photoCount": { "en": "photos", "am": "ፎቶዎች" }
+
+        "reviewsHeading": {
+          "en": "Here is what our customers say.",
+          "am": "ደንበኞቻችን ከሚሉት በጥቅቱ።"
+        },
+        "reviewLabels": {
+          "food": { "en": "Food", "am": "ምግብ" },
+          "service": { "en": "Service", "am": "አገልግሎት" },
+          "atmosphere": { "en": "Atmosphere", "am": "ድባብ" },
+          "recommended": { "en": "Recommended dish", "am": "የሚመከር ምግብ" },
+          "localGuide": { "en": "Local Guide", "am": "የአካባቢ መመሪያ" },
+          "reviewCount": { "en": "reviews", "am": "አስተያየቶች" },
+          "photoCount": { "en": "photos", "am": "ፎቶዎች" }
+        }
+      },
+
+  "recipes": [
+  {
+    "id": "burger",
+    "title": {
+      "en": "Burgers",
+      "am": "በርገር"
+    },
+    "description": {
+      "en": "Beef,Cheese,Ham,and more.",
+      "am": "ቢፊ፣ ቺዝ፣ ሃም፣ እና ለ፟ሌሎች ።"
     }
   },
+  {
+    "id": "cake",
+    "title": {
+      "en": "Cakes",
+      "am": "ኬኮች"
+    },
+    "description": {
+      "en": "Different freshly baked cakes every day.",
+      "am": "የተሌያዩ በየቀኑ የሚጋገሩ ከኮች።"
+    }
+  },
+  {
+    "id": "pizza",
+    "title": {
+      "en": "Pizza",
+      "am": "ፒዛ"
+    },
+    "description": {
+      "en": "Chicken, Beef, Celavie, and more.",
+      "am": "የዶሮ፣ ቢፊ፣ ሴላቪ፣ እና ሌሎች።"
+    }
+  },
+  {
+    "id": "chicken",
+    "title": {
+      "en": "Chicken",
+      "am": "የተጠበሰ ዶሮ"
+    },
+    "description": {
+      "en": "Fried, Grilled, Celavie, and more.",
+      "am": "የተጠበሰ፣ ሴላቪ፣ እና ሌሎች።"
+    }
+  },
+  {
+    "id": "sandwich",
+    "title": {
+      "en": "Sandwiches",
+      "am": "ሳንድዊች"
+    },
+    "description": {
+      "en": "Club, Cheese & Ham, and more.",
+      "am": "ክለብ፣ ቺዝ እና ሃም፣ እና ሌሎች"
+    }
+  },
+  {
+    "id": "pastry",
+    "title": {
+      "en": "Pastries",
+      "am": "ፓስትሪ"
+    },
+    "description": {
+      "en": "Different freshly baked pastries every day.",
+      "am": "የተሌያዩ በየቀኑ የሚጋገሩ ፓስትሪዎች።"
+    }
+  },
+  {
+    "id": "juice",
+    "title": {
+      "en": "Juice",
+      "am": "ጭማቂ"
+    },
+    "description": {
+      "en": "Different juices from fresh fruits and vegetables.",
+      "am": "የተሌያዩ ጭማቂዎች ከትኩስ ፍራፍሬዎችና አትክልቶች።"
+    }
+  }
+],
 
   "reviews": [
     {
@@ -137,6 +226,10 @@
       "summit": {
         "name": { "en": "Summit", "am": "ሰሚት" },
         "note": { "en": "Open daily፡ 9:00 AM - 8:30 PM", "am": "በየቀኑ ይከፈታል: 3:00 ጠዋት - 2:30 ማታ"}
+      },
+      "piasa-mebrat-haile": {
+        "name": { "en": "Piasa Mebrat Haile Building", "am": "ፒያሳ መብራት ሃይል ህንፃ" },
+        "note": { "en": "Open daily: 9:00 AM - 8:30 PM", "am": "በየቀኑ ይከፈታል: 3:00 ጠዋት - 2:30 ማታ" }
       }
     }
   },

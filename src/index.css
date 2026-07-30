@@ -55,10 +55,18 @@
   :lang(am) h1,
   :lang(am) h2,
   :lang(am) h3 {
-    line-height: 1.5;
-    font-size: 0.94em; /* Ethiopic runs optically larger at the same px */
+    /* line-height: 1.5; */
+    /* font-size: 0.94em; Ethiopic runs optically larger at the same px */
     font-weight: 600;
   }
+
+:lang(am) p,
+:lang(am) li,
+:lang(am) dd,
+:lang(am) dt,
+:lang(am) span {
+    line-height: 1.5;
+}
 
   /* Amharic has no lowercase — uppercase transforms do nothing but
      they can throw off tracking, so neutralise them. */
@@ -108,5 +116,20 @@
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .float-slow {
+    animation: floatSlow 6s ease-in-out infinite;
+  }
+
+  @keyframes floatSlow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(2deg); }
   }
 }
